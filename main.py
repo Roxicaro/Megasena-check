@@ -51,13 +51,13 @@ for draw in draws:
     if len(hits) >=4:
         if len(hits) == 6:
             total_jackpot += draw[8]  # jackpot_sena
-            print(f"Concurso {contest}: Acertos {len(hits)} - Números: {sorted(hits)} Premiação: R${draw[8]:,.2f}")
+            print(f"Concurso {contest}: Acertos {len(hits)} - Números: {sorted(hits)} - Premiação: R${draw[8]:,.2f}")
         elif len(hits) == 5:
             total_jackpot += draw[9]  # jackpot_quina
-            print(f"Concurso {contest}: Acertos {len(hits)} - Números: {sorted(hits)} Premiação: R${draw[9]:,.2f}")
+            print(f"Concurso {contest}: Acertos {len(hits)} - Números: {sorted(hits)} - Premiação: R${draw[9]:,.2f}")
         elif len(hits) == 4:
             total_jackpot += draw[10] # jackpot_quadra  
-            print(f"Concurso {contest}: Acertos {len(hits)} - Números: {sorted(hits)} Premiação: R${draw[10]:,.2f}")  
+            print(f"Concurso {contest}: Acertos {len(hits)} - Números: {sorted(hits)} - Premiação: R${draw[10]:,.2f}")  
 
 if total_jackpot == 0:
     print("Nenhum prêmio ganho.")
